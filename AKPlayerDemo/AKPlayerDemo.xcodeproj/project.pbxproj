@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A8587392568165100CA8F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8587382568165100CA8F6B /* AppDelegate.swift */; };
+		4A85873B2568165100CA8F6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A85873A2568165100CA8F6B /* SceneDelegate.swift */; };
+		4A85873D2568165100CA8F6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A85873C2568165100CA8F6B /* ViewController.swift */; };
+		4A8587402568165100CA8F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A85873E2568165100CA8F6B /* Main.storyboard */; };
+		4A8587422568165400CA8F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8587412568165400CA8F6B /* Assets.xcassets */; };
+		4A8587452568165400CA8F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8587432568165400CA8F6B /* LaunchScreen.storyboard */; };
+		4A8588872569F27900CA8F6B /* in.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 4A8588862569F27900CA8F6B /* in.pcm */; };
+		4A8588D4256A165500CA8F6B /* AWPCMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8588D3256A165500CA8F6B /* AWPCMPlayer.m */; };
+		4A8588D9256A167200CA8F6B /* AWAudioUnitPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8588D8256A167200CA8F6B /* AWAudioUnitPlayer.m */; };
+		4A8588DD256A1F6500CA8F6B /* test.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4A8588DC256A1F6500CA8F6B /* test.caf */; };
+		4AD04937256A846600624C23 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD04936256A846600624C23 /* AVFoundation.framework */; };
+		4AD0493E256A86CC00624C23 /* AWBufferTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0493D256A86CC00624C23 /* AWBufferTool.m */; };
+		4AD04956256AB8C000624C23 /* AWDataConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD04955256AB8C000624C23 /* AWDataConvert.swift */; };
+		AC017E6BAAEC384D45BF5892 /* Pods_AKPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF5AD9D588C14E9D3356EFE /* Pods_AKPlayerDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C1F2F7715F57ACBCD0A0DB2 /* Pods-AKPlayerDemo-AKPlayerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKPlayerDemo-AKPlayerDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-AKPlayerDemo-AKPlayerDemoUITests/Pods-AKPlayerDemo-AKPlayerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0CF84B1BAA5BCDE7ABE216C5 /* Pods-AKPlayerDemo-AKPlayerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKPlayerDemo-AKPlayerDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-AKPlayerDemo-AKPlayerDemoUITests/Pods-AKPlayerDemo-AKPlayerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		115FCBD2AC6F181517E401AB /* Pods-AKPlayerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKPlayerDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AKPlayerDemoTests/Pods-AKPlayerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		34BB3A55A3570304EC368116 /* Pods-OCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCDemo.release.xcconfig"; path = "Target Support Files/Pods-OCDemo/Pods-OCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3CF5AD9D588C14E9D3356EFE /* Pods_AKPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8587352568165100CA8F6B /* AKPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8587382568165100CA8F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A85873A2568165100CA8F6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4A85873C2568165100CA8F6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A85873F2568165100CA8F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A8587412568165400CA8F6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A8587442568165400CA8F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A8587462568165400CA8F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8588862569F27900CA8F6B /* in.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = in.pcm; sourceTree = "<group>"; };
+		4A8588D1256A165500CA8F6B /* AKPlayerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AKPlayerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		4A8588D2256A165500CA8F6B /* AWPCMPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWPCMPlayer.h; sourceTree = "<group>"; };
+		4A8588D3256A165500CA8F6B /* AWPCMPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWPCMPlayer.m; sourceTree = "<group>"; };
+		4A8588D7256A167200CA8F6B /* AWAudioUnitPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWAudioUnitPlayer.h; sourceTree = "<group>"; };
+		4A8588D8256A167200CA8F6B /* AWAudioUnitPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWAudioUnitPlayer.m; sourceTree = "<group>"; };
+		4A8588DC256A1F6500CA8F6B /* test.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.caf; sourceTree = "<group>"; };
+		4AD04936256A846600624C23 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4AD04939256A84C500624C23 /* libswiftAVFoundation.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftAVFoundation.tbd; path = usr/lib/swift/libswiftAVFoundation.tbd; sourceTree = SDKROOT; };
+		4AD0493C256A86CC00624C23 /* AWBufferTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWBufferTool.h; sourceTree = "<group>"; };
+		4AD0493D256A86CC00624C23 /* AWBufferTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWBufferTool.m; sourceTree = "<group>"; };
+		4AD04955256AB8C000624C23 /* AWDataConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWDataConvert.swift; sourceTree = "<group>"; };
+		88B0B6E01F3A80F36547C620 /* Pods-AKPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKPlayerDemo.release.xcconfig"; path = "Target Support Files/Pods-AKPlayerDemo/Pods-AKPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		96FBF62DFA353FBCB04E6931 /* Pods_AKPlayerDemo_AKPlayerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKPlayerDemo_AKPlayerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C24EDB68682B2126B70C5E /* Pods_OCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3BA3F69C4EA5B3EAAC73936 /* Pods_AKPlayerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKPlayerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7347CDC5B00BF50587177E2 /* Pods-AKPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-AKPlayerDemo/Pods-AKPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DA69E25962E71608B17BC877 /* Pods-AKPlayerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKPlayerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-AKPlayerDemoTests/Pods-AKPlayerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD10315399633BBEE920A5D7 /* Pods-OCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCDemo.debug.xcconfig"; path = "Target Support Files/Pods-OCDemo/Pods-OCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A8587322568165100CA8F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD04937256A846600624C23 /* AVFoundation.framework in Frameworks */,
+				AC017E6BAAEC384D45BF5892 /* Pods_AKPlayerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A85872C2568165100CA8F6B = {
+			isa = PBXGroup;
+			children = (
+				4A8588852569F27900CA8F6B /* Resource */,
+				4A8587372568165100CA8F6B /* AKPlayerDemo */,
+				4A8587362568165100CA8F6B /* Products */,
+				7F08E2EA77457AFB2C8AF11A /* Pods */,
+				A64A9E62926A7F31F9F3606A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4A8587362568165100CA8F6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A8587352568165100CA8F6B /* AKPlayerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A8587372568165100CA8F6B /* AKPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4A8588C1256A144400CA8F6B /* AVAudio */,
+				4A8587382568165100CA8F6B /* AppDelegate.swift */,
+				4A85873A2568165100CA8F6B /* SceneDelegate.swift */,
+				4A85873C2568165100CA8F6B /* ViewController.swift */,
+				4AD04955256AB8C000624C23 /* AWDataConvert.swift */,
+				4A85873E2568165100CA8F6B /* Main.storyboard */,
+				4A8587412568165400CA8F6B /* Assets.xcassets */,
+				4A8587432568165400CA8F6B /* LaunchScreen.storyboard */,
+				4A8587462568165400CA8F6B /* Info.plist */,
+			);
+			path = AKPlayerDemo;
+			sourceTree = "<group>";
+		};
+		4A8588852569F27900CA8F6B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4A8588DC256A1F6500CA8F6B /* test.caf */,
+				4A8588862569F27900CA8F6B /* in.pcm */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4A8588C1256A144400CA8F6B /* AVAudio */ = {
+			isa = PBXGroup;
+			children = (
+				4A8588D2256A165500CA8F6B /* AWPCMPlayer.h */,
+				4A8588D3256A165500CA8F6B /* AWPCMPlayer.m */,
+				4A8588D7256A167200CA8F6B /* AWAudioUnitPlayer.h */,
+				4A8588D8256A167200CA8F6B /* AWAudioUnitPlayer.m */,
+				4AD0493C256A86CC00624C23 /* AWBufferTool.h */,
+				4AD0493D256A86CC00624C23 /* AWBufferTool.m */,
+				4A8588D1256A165500CA8F6B /* AKPlayerDemo-Bridging-Header.h */,
+			);
+			path = AVAudio;
+			sourceTree = "<group>";
+		};
+		7F08E2EA77457AFB2C8AF11A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7347CDC5B00BF50587177E2 /* Pods-AKPlayerDemo.debug.xcconfig */,
+				88B0B6E01F3A80F36547C620 /* Pods-AKPlayerDemo.release.xcconfig */,
+				0C1F2F7715F57ACBCD0A0DB2 /* Pods-AKPlayerDemo-AKPlayerDemoUITests.debug.xcconfig */,
+				0CF84B1BAA5BCDE7ABE216C5 /* Pods-AKPlayerDemo-AKPlayerDemoUITests.release.xcconfig */,
+				DA69E25962E71608B17BC877 /* Pods-AKPlayerDemoTests.debug.xcconfig */,
+				115FCBD2AC6F181517E401AB /* Pods-AKPlayerDemoTests.release.xcconfig */,
+				DD10315399633BBEE920A5D7 /* Pods-OCDemo.debug.xcconfig */,
+				34BB3A55A3570304EC368116 /* Pods-OCDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A64A9E62926A7F31F9F3606A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AD04939256A84C500624C23 /* libswiftAVFoundation.tbd */,
+				4AD04936256A846600624C23 /* AVFoundation.framework */,
+				3CF5AD9D588C14E9D3356EFE /* Pods_AKPlayerDemo.framework */,
+				96FBF62DFA353FBCB04E6931 /* Pods_AKPlayerDemo_AKPlayerDemoUITests.framework */,
+				C3BA3F69C4EA5B3EAAC73936 /* Pods_AKPlayerDemoTests.framework */,
+				A2C24EDB68682B2126B70C5E /* Pods_OCDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A8587342568165100CA8F6B /* AKPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A85875F2568165500CA8F6B /* Build configuration list for PBXNativeTarget "AKPlayerDemo" */;
+			buildPhases = (
+				8BA3B8CE54CB5929CDB7EB26 /* [CP] Check Pods Manifest.lock */,
+				12D4B8890AB728AB939A6A87 /* [CP] Prepare Artifacts */,
+				4A8587312568165100CA8F6B /* Sources */,
+				4A8587322568165100CA8F6B /* Frameworks */,
+				4A8587332568165100CA8F6B /* Resources */,
+				01F8EB55B35A2D32435FEE8E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AKPlayerDemo;
+			productName = AKPlayerDemo;
+			productReference = 4A8587352568165100CA8F6B /* AKPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A85872D2568165100CA8F6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					4A8587342568165100CA8F6B = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
+					};
+				};
+			};
+			buildConfigurationList = 4A8587302568165100CA8F6B /* Build configuration list for PBXProject "AKPlayerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A85872C2568165100CA8F6B;
+			productRefGroup = 4A8587362568165100CA8F6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A8587342568165100CA8F6B /* AKPlayerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A8587332568165100CA8F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8587452568165400CA8F6B /* LaunchScreen.storyboard in Resources */,
+				4A8587422568165400CA8F6B /* Assets.xcassets in Resources */,
+				4A8587402568165100CA8F6B /* Main.storyboard in Resources */,
+				4A8588DD256A1F6500CA8F6B /* test.caf in Resources */,
+				4A8588872569F27900CA8F6B /* in.pcm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01F8EB55B35A2D32435FEE8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AKPlayerDemo/Pods-AKPlayerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AKPlayerDemo/Pods-AKPlayerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AKPlayerDemo/Pods-AKPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12D4B8890AB728AB939A6A87 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AKPlayerDemo/Pods-AKPlayerDemo-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AKPlayerDemo/Pods-AKPlayerDemo-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AKPlayerDemo/Pods-AKPlayerDemo-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BA3B8CE54CB5929CDB7EB26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AKPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A8587312568165100CA8F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD04956256AB8C000624C23 /* AWDataConvert.swift in Sources */,
+				4A85873D2568165100CA8F6B /* ViewController.swift in Sources */,
+				4A8588D4256A165500CA8F6B /* AWPCMPlayer.m in Sources */,
+				4A8587392568165100CA8F6B /* AppDelegate.swift in Sources */,
+				4A85873B2568165100CA8F6B /* SceneDelegate.swift in Sources */,
+				4A8588D9256A167200CA8F6B /* AWAudioUnitPlayer.m in Sources */,
+				4AD0493E256A86CC00624C23 /* AWBufferTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4A85873E2568165100CA8F6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A85873F2568165100CA8F6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A8587432568165400CA8F6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A8587442568165400CA8F6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A85875D2568165500CA8F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A85875E2568165500CA8F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A8587602568165500CA8F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7347CDC5B00BF50587177E2 /* Pods-AKPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VSRRGC39K4;
+				EXCLUDED_ARCHS = "";
+				INFOPLIST_FILE = AKPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anyway.AKPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AKPlayerDemo/AVAudio/AKPlayerDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A8587612568165500CA8F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88B0B6E01F3A80F36547C620 /* Pods-AKPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VSRRGC39K4;
+				EXCLUDED_ARCHS = "";
+				INFOPLIST_FILE = AKPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anyway.AKPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AKPlayerDemo/AVAudio/AKPlayerDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A8587302568165100CA8F6B /* Build configuration list for PBXProject "AKPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A85875D2568165500CA8F6B /* Debug */,
+				4A85875E2568165500CA8F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A85875F2568165500CA8F6B /* Build configuration list for PBXNativeTarget "AKPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8587602568165500CA8F6B /* Debug */,
+				4A8587612568165500CA8F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A85872D2568165100CA8F6B /* Project object */;
+}
