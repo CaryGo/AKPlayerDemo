@@ -37,4 +37,11 @@
     return thePCMBuffer;
 }
 
++ (AVAudioFile *)getFile {
+    NSURL *url = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"in" ofType:@"pcm"]];
+    NSError *error = nil;
+    AVAudioFile *file = [[AVAudioFile alloc] initForReading:url commonFormat:AVAudioPCMFormatInt16 interleaved:YES error:&error];
+    return file;
+}
+
 @end

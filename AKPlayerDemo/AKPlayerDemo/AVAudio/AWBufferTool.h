@@ -12,4 +12,6 @@
 
 - (AVAudioPCMBuffer *)getAudioBuffer:(NSString *)path;
 
++ (AVAudioFile *)getFile;
+
 @end
